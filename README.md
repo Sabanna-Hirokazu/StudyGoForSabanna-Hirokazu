@@ -39,3 +39,25 @@ if x < 10 {
     println("elseは改行ぜずにいれます")
 }
 ```
+
+### 4日目
+for文について学んだ。Goのfor文は少し特別な気がした。Goにはwhile文がないようなのでwhileの代わりにfor文を使う。for文に引数を与えないと無限ループになる。次にfor文の後ろに条件式を記載することで条件式を満たすうちはfor文が回るようになる。その他にもC言語などのように値の宣言から条件式や回ってきた際の処理をいれるということも可能。最後のfor文は0,1,2,3,4と表示され,jのfor文の中身はj=0で処理されるようにcontinue "Label name"にすることで"Label name"を記載したところから始めることが出来る。
+
+```
+for{
+    println("無限ループ")
+}
+for count < 5 {
+    println("countが5になるまでまわす")
+}
+for i:= 0; i<5; i++{
+    println("c言語のような感じ")
+}
+Label:
+for i:= 0; i<5; i++{
+    for j:= 0; j<5; j++{
+        println(i+j)
+        continue Label
+    }
+}
+```
