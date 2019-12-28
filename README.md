@@ -73,3 +73,6 @@ slice := []int{1,2,3}
 // 値の追加(sliceにvalueを追加する)
 slice := append(slice, value)
 ```
+
+### 6日目
+sliceに値を取り除くものが存在していなかった。そのため今回は値を取り出すための関数removeを定義してみた。goの...を使うのがとても便利であることを知った。今回は取り出す位置の手前をsliceとして抽出し、取り出す位置よりあとのsliceをappendすることでremoveの関数を実現した。([removeSlice.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/removeSlice.go)に記載)
