@@ -27,7 +27,7 @@ go run "FileName"
 ```
 
 ### 2日目
-Goの変数の宣言が今までにない感じで新しい。基本的に"var '変数名' '型'"で宣言できる。難しくはないが、なれる必要があると感じた。それに加え型推論がとてもしっかりとしているため、"変数名:=12"というやり方でもint型と定義される。"var 変数名 = 10"と"変数名 := 10"はどっちが多く使われているのだろう。([variable.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/variable.go))
+Goの変数の宣言が今までにない感じで新しい。基本的に"var '変数名' '型'"で宣言できる。難しくはないが、なれる必要があると感じた。それに加え型推論がとてもしっかりとしているため、"変数名:=12"というやり方でもint型と定義される。"var 変数名 = 10"と"変数名 := 10"はどっちが多く使われているのだろう。([variableTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/variableTest.go))
 
 ### 3日目
 本日はif文とswitch文に取り組んだ。if文の使い方が少しむずかしい。基本的にelseやelse ifを書くときはif文で閉じた中括弧の後ろに改行せずにする必要がある。switch文はcaseのあとに複数値を入力することが出来る。複数入力するとorの関係性と等しい。([ifTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/ifTest.go))
@@ -76,3 +76,19 @@ slice := append(slice, value)
 
 ### 6日目
 sliceに値を取り除くものが存在していなかった。そのため今回は値を取り出すための関数removeを定義してみた。goの...を使うのがとても便利であることを知った。今回は取り出す位置の手前をsliceとして抽出し、取り出す位置よりあとのsliceをappendすることでremoveの関数を実現した。([removeSlice.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/removeSlice.go))
+
+### 7日目
+今回はswitchについて学んだ。基本的な部分はifやelse ifといったものと同じ。"switch 条件式"というだけでなく、"switch 変数"という形にもすることができる。下記のようにすることができ、caseにおける値は一つでも複数でも可能。この場合"2, 3"というのは"if count == 2 || count == 3"というようなorの条件式を設定することが可能。([switchTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/switchTest.go))
+
+```
+count := 4
+switch count {
+    case 2, 3:
+        println(23)
+    case 4, 5:
+        println(45)
+    default:
+        println(0)
+    }
+```
+
