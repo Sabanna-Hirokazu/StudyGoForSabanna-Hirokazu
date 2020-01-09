@@ -97,3 +97,7 @@ switch count {
 
 ### 9日目
 前回に引き続きGinについて学ぶ。WebのフレームワークといったらHtmlを表示したくなる。HTML renderingの説明にある文を用いて作成を行った。htmlを扱うときはimportを忘れずにする。基本的に読み込みたいhtmlファイルなどは先に読み込みをしておく必要がある。フォルダ内のファイルをすべてを使うときにLoadHTMLGlobが役立つ。＊などを使うことが出来るからだ。そのかわりに複数のものを指定することは出来ないので、全てではなく一部を使いたいときはr.LoadHTMLFilesを使うと良い。これは＊などですべてのファイルを指定することは出来ないが、複数のディレクトリのパスを指定することが出来る。必要に応じて使用する必要がある。Gin Debugを見ると読み込んだファイルを確認することが出来る。([sampleHtml.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleHtml.go))
+
+
+### 10日目
+Ginについて学ぶ。Basic認証が使える。これはhttpなどの通信を簡単に認証方式を導入することが出来る。サンプルコードを一部変更しただけだが、データベースにあたる変数secretsがあるため、データベースの値をうまく整えることでデータベースとの連携も出来ると考える。([sampleBasicAuth.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleBasicAuth.go))
