@@ -101,3 +101,7 @@ switch count {
 
 ### 10日目
 Ginについて学ぶ。Basic認証が使える。これはhttpなどの通信を簡単に認証方式を導入することが出来る。サンプルコードを一部変更しただけだが、データベースにあたる変数secretsがあるため、データベースの値をうまく整えることでデータベースとの連携も出来ると考える。([sampleBasicAuth.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleBasicAuth.go))
+
+
+### 11日目
+Ginを学んでいく上でif文の新たな使い方を知った。シンプルステートメントというらしい。ifにはtrue、falseのように真偽値が必要だが、ifの関数内だけで変数を使いたいというときが来るかもしれない。値の宣言や代入などは真偽値の前に置き、セミコロンで閉じることで実行できるようになる。([ifTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/ifTest.go))

@@ -17,4 +17,16 @@ func main() {
 	} else if x < 20 || y >= 20 {
 		println("bad")
 	}
+
+	if xy := x + y; true {
+		println(xy)
+	}
+
+	if y = 20; true {
+		println(y)
+	}
+
+	if z, ok := y-x, true; ok {
+		println(z)
+	}
 }
