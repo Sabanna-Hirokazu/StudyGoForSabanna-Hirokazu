@@ -105,3 +105,7 @@ Ginについて学ぶ。Basic認証が使える。これはhttpなどの通信�
 
 ### 11日目
 Ginを学んでいく上でif文の新たな使い方を知った。シンプルステートメントというらしい。ifにはtrue、falseのように真偽値が必要だが、ifの関数内だけで変数を使いたいというときが来るかもしれない。値の宣言や代入などは真偽値の前に置き、セミコロンで閉じることで実行できるようになる。([ifTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/ifTest.go))
+
+
+### 12日目
+Goでmap関数を用いて辞書のようなものを作成した。Ginを学んでいるときにjsonのような形式の価をどのように行っているかの理解を深めるために作製した。辞書型のようは配列を作成し、キーを用いて価を参照すると戻り地に価が２つ受け渡されることに注意が必要！([dictionaryTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/dictionaryTest.go))
