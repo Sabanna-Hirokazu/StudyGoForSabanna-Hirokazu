@@ -7,4 +7,7 @@ func main() {
 	number, ok := dic["A"]
 	fmt.Println(number)
 	fmt.Println(ok)
+	number, ok = dic["D"]
+	fmt.Println(number)
+	fmt.Println(ok)
 }

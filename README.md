@@ -109,3 +109,7 @@ Ginを学んでいく上でif文の新たな使い方を知った。シンプル
 
 ### 12日目
 Goでmap関数を用いて辞書のようなものを作成した。Ginを学んでいるときにjsonのような形式の価をどのように行っているかの理解を深めるために作製した。辞書型のようは配列を作成し、キーを用いて価を参照すると戻り地に価が２つ受け渡されることに注意が必要！([dictionaryTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/dictionaryTest.go))
+
+
+### 13日目
+GinでBasic認証を用いるのは難しい。BasicAuth()に関するものがあまりなく、例外に対応することが出来なかった。BasicAuth()によって定められたアカウントのキーとは異なる価が入力をされたとする。しかしfunc(c *gin.Context)の中身を実行してくれない。そのため、特定のユーザーとパスワードが一致したときに関数は実行されるが、一致しないときには関数を実行しくれない。他にも実行方法があるのかを検討中。([sampleBasicAuth.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleBasicAuth.go))

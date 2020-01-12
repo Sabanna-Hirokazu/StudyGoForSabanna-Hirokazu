@@ -24,7 +24,7 @@ func main() {
 		if secret, ok := secrets[user]; ok {
 			c.JSON(http.StatusOK, gin.H{"user": user, "secret": secret})
 		} else {
-			c.JSON(200, gin.H{"user": "NoUser", "secret": "NO SECRET :("})
+			c.JSON(http.StatusOK, gin.H{"user": "NoUser", "secret": "NO SECRET :("})
 		}
 	})
 	r.Run(":8080")
