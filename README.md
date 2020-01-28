@@ -115,11 +115,19 @@ Goでmap関数を用いて辞書のようなものを作成した。Ginを学ん
 GinでBasic認証を用いるのは難しい。BasicAuth()に関するものがあまりなく、例外に対応することが出来なかった。BasicAuth()によって定められたアカウントのキーとは異なる価が入力をされたとする。しかしfunc(c *gin.Context)の中身を実行してくれない。そのため、特定のユーザーとパスワードが一致したときに関数は実行されるが、一致しないときには関数を実行しくれない。他にも実行方法があるのかを検討中。([sampleBasicAuth.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleBasicAuth.go))
 
 ### 14日目
-GinでQueryの処理をやってみた。今回はGETで価を取ってくるように作成した。curlの場合はバックスラッシュが無いと複数パラメータを投げれないことがわかった。これである程度のWebアプリケーションの実装が可能になりそう。([sampleQuery.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleQuery.go))
+GinでQueryの処理をやってみた。今回はGETで値を取ってくるように作成した。curlの場合はバックスラッシュが無いと複数パラメータを投げれないことがわかった。これである程度のWebアプリケーションの実装が可能になりそう。([sampleQuery.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleQuery.go))
 
 ```
 // ブラウザなど
 http://localhost:8080/get?id=10&page=1&name=hoge&message=fuga
 //　ターミナルやコマンドプロンプト
 curl localhost:8080/get?id=10\&page=1\&name=hoge\&message=fuga
+```
+
+
+### 15日目
+前回と同じようにクエリをやってみる。今回はPOSTでチャレンジ！これでフォームに使われる処理をある程度理解できた。([sampleQuery.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/SampleGin/sampleQuery.go))
+
+```
+curl -X POST -F "name=hoge" -F "message=Fuga" localhost:8080/post?id=10\&page=1
 ```
