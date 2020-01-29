@@ -131,3 +131,7 @@ curl localhost:8080/get?id=10\&page=1\&name=hoge\&message=fuga
 ```
 curl -X POST -F "name=hoge" -F "message=Fuga" localhost:8080/post?id=10\&page=1
 ```
+
+
+### 16日目
+ポインタについて学ぶ。C言語と同じように扱うことが出来る。変数に＆を付けることでその変数のアドレスを取得できる。アドレスを保存しておくためにはポインタを使う。変数の型の前に＊を付けるだけでその型のポインタになる。今回試したのはn1のアドレスを指しているのがn2という環境で行い、もちろんn2はn1を指し示しているため、n1の価が変更されればn2の価も変更されていることがわかった。([pointerTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/pointerTest.go))
