@@ -143,3 +143,7 @@ curl -X POST -F "name=hoge" -F "message=Fuga" localhost:8080/post?id=10\&page=1
 
 ### 18日目
 Goのパッケージについて学ぶ。オブジェクト指向のようにカプセル化をすることで、必要な操作のみを可能にさせ、中身を隠すことが出来る。使用する場合はパッケージの名前をフォルダにつけ、そのフォルダの階層内にファイルを追加していく。ここでフォルダの名前は最初に大文字を使うと使用することが出来なかった。Javaなども小文字が推奨されているっぽい。フォルダ内にあるGoファイルは"package foldername"にする必要がある。定義する関数は大文字始まりでないと認識することが出来ない。外部から使用する場合はフォルダ名をインポートすれば使用することが出来る。([sortTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/sortTest.go))
+
+
+### 19日目
+ソートがどうやらGoでは標準搭載ではないらしい。そのため、ソートしたいときのためにソートの関数を作成する。前回のパッケージを用いて作成する。今回はバブルソートを実装した。バブルソートはリストの先頭から進み、次の値と比較する。次の値より大きい場合は、その値と次の価を入れ替える。それを繰り返すことで最後に一番大きいもしくは小さい価がくる。これを配列のサイズの数だけ回す。([BubbleSort.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/mysort/BubbleSort.go))
