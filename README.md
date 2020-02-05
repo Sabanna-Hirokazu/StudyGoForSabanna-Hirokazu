@@ -151,3 +151,11 @@ Goのパッケージについて学ぶ。オブジェクト指向のようにカ
 
 ### 20日目
 ソートしたいときのためにソートの関数を作成する。前回と同様に作成する。今回は選択ソートを実装した。選択ソートはリストの先頭と後ろの値を比較する。後ろの値より大きい場合は、その値と後ろの値を入れ替える。このとき入れ替える後ろの値は、後ろの値の中で最小値もしくは最大値を選ぶ。それを繰り返すことで最初に一番大きいもしくは小さい値がくる。これを配列のサイズの数だけ回す。([SelectionSort.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/mysort/SelectionSort.go))
+
+
+### 21日目
+挿入ソートを実装した。挿入ソートは、先頭の値はソート済みと考え、残りの次の値をどこに入れるかをソート済みの後ろの値から比較して考える。これを繰り返すことでソートすることができる。([InsertionSort.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/mysort/InsertionSort.go))
+
+
+### 22日目
+マージソートを実装した。マージソートは半分で分割を行い、その分割を行ったものをサイズの順番にソートしながら結合するアルゴリズム。[MergeSort.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/mysort/MergeSort.go))
