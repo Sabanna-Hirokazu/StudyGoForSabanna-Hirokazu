@@ -1,11 +1,11 @@
 package mysort
 
-func merge(left []int, right []int) []int {
+func combine(left []int, right []int) []int {
 	result := []int{}
 	valLeft := len(left)
 	valRight := len(right)
 	i, j := 0, 0
-	for i < valLeft || j < valRight {
+	for i < valLeft && j < valRight {
 		if left[i] < right[j] {
 			result = append(result, left[i])
 			i++
@@ -23,13 +23,13 @@ func merge(left []int, right []int) []int {
 }
 
 func separate(slice []int) []int {
-	if len(slice) < 1 {
+	if len(slice) <= 1 {
 		return slice
 	}
 	var middle int = len(slice) / 2
-	return merge(separate(slice[:middle]), separate(slice[middle:]))
+	return combine(separate(slice[:middle]), separate(slice[middle:]))
 }
 
 func Merge(slice []int) []int {
-	return slice
+	return separate(slice)
 }
