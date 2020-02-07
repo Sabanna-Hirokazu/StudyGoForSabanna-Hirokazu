@@ -159,3 +159,6 @@ Goのパッケージについて学ぶ。オブジェクト指向のようにカ
 
 ### 22日目
 マージソートを実装した。マージソートは半分で分割を行い、その分割を行ったものをサイズの順番にソートしながら結合するアルゴリズム。[MergeSort.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/mysort/MergeSort.go))
+
+### 23日目
+クイックソートを実装した。クイックソートはピボットと呼ばれる値を取り、ピボットより小さいかもしくはピボット以上かでグループ分けを行う。ピボットの値によって計算量が大きく変わってくる。今回は先頭の値もしくは次の値を取るクイックソートで実装した。グループを分けていく過程で、ピボットが最小値の場合、グループ分けができないので、次の値が大きい場合は、次の値をとるようにした。[QuickSort.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/mysort/QuickSort.go))
