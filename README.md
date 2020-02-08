@@ -162,3 +162,7 @@ Goのパッケージについて学ぶ。オブジェクト指向のようにカ
 
 ### 23日目
 クイックソートを実装した。クイックソートはピボットと呼ばれる値を取り、ピボットより小さいかもしくはピボット以上かでグループ分けを行う。ピボットの値によって計算量が大きく変わってくる。今回は先頭の値もしくは次の値を取るクイックソートで実装した。グループを分けていく過程で、ピボットが最小値の場合、グループ分けができないので、次の値が大きい場合は、次の値をとるようにした。[QuickSort.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/mysort/QuickSort.go))
+
+
+### 24日目
+今回はInterfaceを学んだ。interface自体はJavaのinterfaceとほとんど考え方は同じだが、実装するimplementsの宣言がないためわかりにくい。interfaceには共通して必要なものを宣言だけしておく。その後実装する関数でその内容を記載する必要がある。Goの場合、interfaceの型に宣言した変数にキャストしていれるようなイメージで作成することができる。interfaceで宣言したもの以外を宣言する、もしくは宣言したものを実装していない場合エラーが出るので注意が必要だ。[interfaceTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/interfaceTest.go))
