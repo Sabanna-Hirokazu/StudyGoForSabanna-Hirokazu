@@ -166,3 +166,7 @@ Goのパッケージについて学ぶ。オブジェクト指向のようにカ
 
 ### 24日目
 今回はInterfaceを学んだ。interface自体はJavaのinterfaceとほとんど考え方は同じだが、実装するimplementsの宣言がないためわかりにくい。interfaceには共通して必要なものを宣言だけしておく。その後実装する関数でその内容を記載する必要がある。Goの場合、interfaceの型に宣言した変数にキャストしていれるようなイメージで作成することができる。interfaceで宣言したもの以外を宣言する、もしくは宣言したものを実装していない場合エラーが出るので注意が必要だ。[interfaceTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/interfaceTest.go))
+
+
+### 25日目
+本日はGoの並列処理について学んでいく。Goでは並列処理がとてもやりやすいときいていたがとても奥が深いと感じた。Goの並列処理にはchannelとWaitGroupを使うパターンが存在した。今回は並列にするのと並列にしないとではどれくらい時間が変わるのかを計測した。forループで計測した。pythonのようにpassみたいなものがなかったため書き方が少し雑にはなったが検証することが出来た。並列を行わず関数を２回呼び出した結果は0.8306973秒かかった。しかし並列で関数を実行することで0.435357372になった。約半ほど時間が減ったことがわかる。多次元配列などのソートなどにおいてかなり役立つのではないかと思った。[parallelProcesingTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/parallelProcesingTest.go))
