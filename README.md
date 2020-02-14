@@ -170,3 +170,7 @@ Goのパッケージについて学ぶ。オブジェクト指向のようにカ
 
 ### 25日目
 本日はGoの並列処理について学んでいく。Goでは並列処理がとてもやりやすいときいていたがとても奥が深いと感じた。Goの並列処理にはchannelとWaitGroupを使うパターンが存在した。今回は並列にするのと並列にしないとではどれくらい時間が変わるのかを計測した。forループで計測した。pythonのようにpassみたいなものがなかったため書き方が少し雑にはなったが検証することが出来た。並列を行わず関数を２回呼び出した結果は0.8306973秒かかった。しかし並列で関数を実行することで0.435357372になった。約半ほど時間が減ったことがわかる。多次元配列などのソートなどにおいてかなり役立つのではないかと思った。[parallelProcesingTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/parallelProcesingTest.go))
+
+
+### 26日目
+今回はGoの無名関数について学んでいく。Goの並列処理を学んでいたとき、よくわからない関数が登場したため勉強をする。前回行われていた関数の表記はs4のやり方と等しい。基本はmainの関数外で関数を宣言して行うが、無名関数はその関数内で宣言することが出来る。通常の関数は関数の中に宣言することが出来ない。いろいろな方法があるのではないかと考える。[functionTest.go](https://github.com/Sabanna-Hirokazu/StudyGoForSabanna-Hirokazu/blob/master/functionTest.go))
